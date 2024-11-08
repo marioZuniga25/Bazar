@@ -79,6 +79,26 @@
   },
   {
     "ContainingType": "Bazar_Punto_Medio.Controllers.ProductosController",
+    "Method": "GetListadoCompras",
+    "RelativePath": "api/Productos/ListadoCompras",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Bazar_Punto_Medio.Models.Producto, Bazar Punto Medio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Bazar_Punto_Medio.Controllers.ProductosController",
     "Method": "GetListadoProductos",
     "RelativePath": "api/Productos/ListadoProductos",
     "HttpMethod": "GET",
@@ -88,6 +108,42 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[Bazar_Punto_Medio.Models.Producto, Bazar Punto Medio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Bazar_Punto_Medio.Controllers.ProductosController",
+    "Method": "RegistrarCompra",
+    "RelativePath": "api/Productos/registrarCompra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaCompra",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "total",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Bazar_Punto_Medio.Models.Compra, Bazar Punto Medio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

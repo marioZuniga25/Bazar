@@ -70,13 +70,71 @@ namespace Bazar_Punto_Medio.Controllers
 
 
         [HttpPost("registrarCompra")]
-        public async Task<ActionResult<IEnumerable<Imagen>>> RegistrarCompra(DateOnly fechaCompra)
+        public async Task<ActionResult<IEnumerable<Compra>>> RegistrarCompra(string fechaCompra, double total, int idProducto)
         {
-           
 
+            var compra = new Compra();
+            compra.fechaCompra = fechaCompra; 
+            compra.total = total;
+
+            await _context.Compra.AddAsync(compra);
+            await _context.SaveChangesAsync();
+
+
+            var detalleCompra = new DetalleCompra();
+            detalleCompra.precioUnitario = total;
+            detalleCompra.idProducto = idProducto;
+            detalleCompra.idCompra = compra.id;
+
+            await _context.DetalleCompra.AddAsync(detalleCompra);
+            await _context.SaveChangesAsync();
+            
             
 
-            return Ok();
+            return Ok(compra);
+        }
+
+        [HttpGet("ListadoCompras")]
+        public async Task<ActionResult<IEnumerable<Producto>>> GetListadoCompras()
+        {
+            var comprasConDetalles = _context.Compra
+    .Join(_context.DetalleCompra,
+          compra => compra.id,
+          detalle => detalle.idCompra,
+          (compra, detalle) => new { compra, detalle }) 
+    .Join(_context.Producto,
+          temp => temp.detalle.idProducto,
+          producto => producto.id,
+          (temp, producto) => new
+          {
+              Compra = new
+              {
+                  temp.compra.id,
+                  temp.compra.fechaCompra,
+                  temp.compra.total
+              },
+              DetalleCompra = new
+              {
+                  temp.detalle.idProducto,
+                  temp.detalle.precioUnitario,
+                  Producto = new
+                  {
+                      producto.title,
+                      producto.description,
+                      producto.price,
+                      producto.discountPercentage,
+                      producto.rating,
+                      producto.stock,
+                      producto.brand,
+                      producto.category,
+                      producto.thumbnail
+                  }
+              }
+          })
+    .ToList();
+
+
+            return Ok(comprasConDetalles);
         }
 
 
