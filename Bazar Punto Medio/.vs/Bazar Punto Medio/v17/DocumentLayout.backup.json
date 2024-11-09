@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\models\\comprarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\models\\comprarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\bazarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\bazarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|solutionrelative:bazar punto medio\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B63A23F6-47EE-4B9A-9D7F-DDB28F42923B}|Bazar Punto Medio\\Bazar Punto Medio.csproj|d:\\desarrollos\\asp.net\\bazar punto medio\\bazar punto medio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CompraRequest.cs",
+              "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\CompraRequest.cs",
+              "RelativeDocumentMoniker": "Bazar Punto Medio\\Models\\CompraRequest.cs",
+              "ToolTip": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\CompraRequest.cs",
+              "RelativeToolTip": "Bazar Punto Medio\\Models\\CompraRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T04:37:33.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DetalleCompra.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\DetalleCompra.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Models\\DetalleCompra.cs",
@@ -59,20 +76,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Compra.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\Compra.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Models\\Compra.cs",
               "ToolTip": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\Compra.cs",
               "RelativeToolTip": "Bazar Punto Medio\\Models\\Compra.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T08:34:28.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BazarContext.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\BazarContext.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\BazarContext.cs",
@@ -80,12 +97,11 @@
               "RelativeToolTip": "Bazar Punto Medio\\BazarContext.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAUwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:21:21.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T08:21:21.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Imagen.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\Imagen.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Models\\Imagen.cs",
@@ -93,11 +109,12 @@
               "RelativeToolTip": "Bazar Punto Medio\\Models\\Imagen.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:33:14.086Z"
+              "WhenOpened": "2024-11-08T08:33:14.086Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Producto.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Models\\Producto.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Program.cs",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Program.cs",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\appsettings.json",
               "RelativeDocumentMoniker": "Bazar Punto Medio\\appsettings.json",
@@ -140,7 +157,7 @@
               "RelativeDocumentMoniker": "Bazar Punto Medio\\Controllers\\ProductosController.cs",
               "ToolTip": "D:\\Desarrollos\\ASP.NET\\Bazar Punto Medio\\Bazar Punto Medio\\Controllers\\ProductosController.cs",
               "RelativeToolTip": "Bazar Punto Medio\\Controllers\\ProductosController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAuwIgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwv1YAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T08:13:17.927Z",
               "EditorCaption": ""

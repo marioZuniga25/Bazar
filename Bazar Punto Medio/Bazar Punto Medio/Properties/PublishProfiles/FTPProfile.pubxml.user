@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAUL3k/5wMEOusKLjVvlepQAAAAACAAAAAAAQZgAAAAEAACAAAACVaLTFQFzrpZHKeOIsW7kItyJuw+QtHUcE6suiGgSJeAAAAAAOgAAAAAIAACAAAABXdIpdZQU9zqunnKZpSQp9urcmVNF2Mv47/EVJCuwzrCAAAACmYhQfcsN4uvPV1MRcwXl6c++6XxycPkbEOYyDqBeVGkAAAAAB9tveeih8aLLHgsDR1vBE+SXC1yHT/7GiCUa31U5oxS8PB42IWUZTJPSTiIERnczDobyNx3nUk72a+RGQp/3H</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.38/www.bazarpm.somee.com</_PublishTargetUrl>
-    <History>True|2024-11-08T21:23:00.1048506Z||;True|2024-11-08T13:15:53.1997782-06:00||;True|2024-11-08T05:19:30.8817522-06:00||;True|2024-11-08T05:06:17.6072881-06:00||;</History>
+    <History>True|2024-11-09T04:39:12.7583189Z||;True|2024-11-08T22:24:45.6835367-06:00||;True|2024-11-08T15:23:00.1048506-06:00||;True|2024-11-08T13:15:53.1997782-06:00||;True|2024-11-08T05:19:30.8817522-06:00||;True|2024-11-08T05:06:17.6072881-06:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -23,7 +23,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/08/2024 05:18:01</publishTime>
     </File>
     <File Include="appsettings.production.json">
-      <publishTime>11/08/2024 15:22:02</publishTime>
+      <publishTime>11/08/2024 22:38:15</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>09/07/2023 11:50:30</publishTime>
@@ -32,16 +32,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/18/2023 13:59:42</publishTime>
     </File>
     <File Include="Bazar Punto Medio.deps.json">
-      <publishTime>11/08/2024 15:22:02</publishTime>
+      <publishTime>11/08/2024 22:38:15</publishTime>
     </File>
     <File Include="Bazar Punto Medio.dll">
-      <publishTime>11/08/2024 15:22:01</publishTime>
+      <publishTime>11/08/2024 22:38:14</publishTime>
     </File>
     <File Include="Bazar Punto Medio.exe">
-      <publishTime>11/08/2024 15:22:01</publishTime>
+      <publishTime>11/08/2024 22:38:14</publishTime>
     </File>
     <File Include="Bazar Punto Medio.pdb">
-      <publishTime>11/08/2024 15:22:01</publishTime>
+      <publishTime>11/08/2024 22:38:14</publishTime>
     </File>
     <File Include="Bazar Punto Medio.runtimeconfig.json">
       <publishTime>11/08/2024 04:47:24</publishTime>
@@ -185,7 +185,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/22/2021 18:49:44</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>11/08/2024 15:22:02</publishTime>
+      <publishTime>11/08/2024 22:38:15</publishTime>
     </File>
   </ItemGroup>
 </Project>

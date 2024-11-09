@@ -70,39 +70,47 @@ namespace Bazar_Punto_Medio.Controllers
 
 
         [HttpPost("registrarCompra")]
-        public async Task<ActionResult<IEnumerable<Compra>>> RegistrarCompra(string fechaCompra, double total, int idProducto)
+        public async Task<ActionResult<Compra>> RegistrarCompra([FromBody] CompraRequest compraRequest)
         {
+            if (compraRequest == null)
+            {
+                return BadRequest("Los datos de la compra son inválidos.");
+            }
 
-            var compra = new Compra();
-            compra.fechaCompra = fechaCompra; 
-            compra.total = total;
+            // Crear la compra
+            var compra = new Compra
+            {
+                fechaCompra = compraRequest.FechaCompra,
+                total = compraRequest.Total
+            };
 
             await _context.Compra.AddAsync(compra);
             await _context.SaveChangesAsync();
 
-
-            var detalleCompra = new DetalleCompra();
-            detalleCompra.precioUnitario = total;
-            detalleCompra.idProducto = idProducto;
-            detalleCompra.idCompra = compra.id;
+            // Crear el detalle de la compra
+            var detalleCompra = new DetalleCompra
+            {
+                precioUnitario = compraRequest.Total,
+                idProducto = compraRequest.IdProducto,
+                idCompra = compra.id
+            };
 
             await _context.DetalleCompra.AddAsync(detalleCompra);
             await _context.SaveChangesAsync();
-            
-            
 
             return Ok(compra);
         }
+
 
         [HttpGet("ListadoCompras")]
         public async Task<ActionResult<IEnumerable<Producto>>> GetListadoCompras()
         {
             var comprasConDetalles = _context.Compra
-    .Join(_context.DetalleCompra,
+        .Join(_context.DetalleCompra,
           compra => compra.id,
           detalle => detalle.idCompra,
           (compra, detalle) => new { compra, detalle }) 
-    .Join(_context.Producto,
+        .Join(_context.Producto,
           temp => temp.detalle.idProducto,
           producto => producto.id,
           (temp, producto) => new

@@ -39,6 +39,12 @@ const ResultsPage = () => {
     fetchResults();
   }, [query]);
 
+  const handleCompras = () => {
+    
+      navigate(`/compras`);
+    
+  };
+
   const handleProductClick = (id) => {
     navigate(`/producto/${id}`);
   };
@@ -48,7 +54,7 @@ const ResultsPage = () => {
       <div className="search-bar">
         <input type="text" placeholder="Buscar productos..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
         <button onClick={handleSearch} className="search-button">Buscar</button>
-        <FaShoppingCart className="cart-icon" />
+        <FaShoppingCart className="cart-icon" onClick={handleCompras}/>
       </div>
 
       <h2>Resultados para: "{query}"</h2>

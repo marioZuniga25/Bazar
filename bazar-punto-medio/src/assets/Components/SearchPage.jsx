@@ -10,9 +10,14 @@ const SearchPage = () => {
 
   const handleSearch = () => {
     if (searchTerm.trim()) {
-      // Redirigir a la página de resultados con el término de búsqueda
       navigate(`/resultados?query=${searchTerm}`);
     }
+  };
+
+  const handleCompras = () => {
+    
+      navigate(`/compras`);
+    
   };
 
   return (
@@ -30,7 +35,7 @@ const SearchPage = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <FaShoppingCart className="cart-icon" />
+            <FaShoppingCart className="cart-icon" onClick={handleCompras}/>
         </div>
       
       <button onClick={handleSearch} className="search-button">Buscar</button>

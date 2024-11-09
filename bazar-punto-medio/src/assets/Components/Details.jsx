@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importa los estilos del carrusel
 import './Details.css';
+import { useNavigate } from 'react-router-dom';
 
 const Details = () => {
   const { id } = useParams();
   const [producto, setProducto] = useState(null);
   const [imagenes, setImagenes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProductDetails = async () => {
@@ -53,6 +55,45 @@ const Details = () => {
     return <p>Producto no encontrado</p>;
   }
 
+  const buy = async () => {
+    // Asegúrate de que la fecha esté en el formato correcto: 'YYYY-MM-DD'
+    const fecha = new Date().toISOString().split('T')[0]; // Formato YYYY-MM-DD
+
+    const total = producto.price * (1 - (producto.discountPercentage / 100)); // Total con descuento
+    const idProducto = producto.id;  // ID del producto
+
+    try {
+        const response = await fetch('https://www.bazarpm.somee.com/api/Productos/registrarCompra', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                fechaCompra: fecha,  // Asegúrate de que esté en el formato correcto
+                total: total,
+                idProducto: idProducto,
+            }),
+          
+        });
+        if (!response.ok) {
+            const errorData = await response.json();  // Obtener detalles del error
+            console.error('Error:', errorData);
+            throw new Error('Error al registrar la compra');
+        }
+
+        const data = await response.json();
+        console.log('Compra registrada exitosamente:', data);
+        alert('Compra realizada con éxito!');
+        navigate(`/`);
+    } catch (error) {
+        console.error('Error al registrar la compra:', error.message);
+        alert('Hubo un error al realizar la compra.');
+    }
+};
+
+
+
+
   return (
     <div className="product-detail-page">
       <h2>{producto.title}</h2>
@@ -81,7 +122,7 @@ const Details = () => {
       <p>{producto.description}</p>
 
       <div className="actions">
-        <button>Comprar Ahora</button>
+        <button onClick={buy}>Comprar Ahora</button>
       </div>
     </div>
   );
